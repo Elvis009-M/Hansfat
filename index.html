@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hansfat International School— Excellence in Education</title>
-    <meta name="description" content="Welcome to Hansfat international School located in [INSERT TOWN/CITY, GHANA]. Discover our academic programmes, admissions process, and vibrant student life.">
+    <title>Hansfat International School — Excellence in Education</title>
+    <meta name="description" content="Welcome to Hansfat International School located in Zenu, Ghana. Discover our academic programmes, admissions process, and vibrant student life.">
     
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +36,6 @@
     </script>
     
     <style>
-        /* Custom scrollbar and minor enhancements */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -54,16 +53,16 @@
     <!-- DEMO BANNER -->
     <div class="bg-amber-500 text-slate-950 px-4 py-2 text-center text-xs sm:text-sm font-semibold tracking-wide flex items-center justify-center gap-2">
         <i class="fa-solid fa-triangle-exclamation"></i>
-        <span>DEMONSTRATION PROJECT: This template is presented to showcase professional web design for Hansfat International School.</span>
+        <span>DEMONSTRATION PROJECT: Presented to showcase professional web design for Hansfat International School.</span>
     </div>
 
     <!-- TOP INFORMATION BAR -->
     <div class="bg-navy text-slate-300 text-xs sm:text-sm py-2 px-4 border-b border-slate-800">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
             <div class="flex items-center gap-6 flex-wrap justify-center sm:justify-start">
-                <span class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-secondary"></i> [Zenu, GHANA]</span>
+                <span class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-secondary"></i> Zenu, Ghana</span>
                 <a href="tel:[INSERT VERIFIED NUMBER]" class="flex items-center gap-2 hover:text-white transition"><i class="fa-solid fa-phone text-secondary"></i> [INSERT VERIFIED NUMBER]</a>
-                <a href="mailto: edwinquaiccoe@gmail.com" class="flex items-center gap-2 hover:text-white transition"><i class="fa-solid fa-envelope text-secondary"></i> [INSERT VERIFIED EMAIL]</a>
+                <a href="mailto:[INSERT VERIFIED EMAIL]" class="flex items-center gap-2 hover:text-white transition"><i class="fa-solid fa-envelope text-secondary"></i> [INSERT VERIFIED EMAIL]</a>
             </div>
             <div class="flex items-center gap-4">
                 <span class="hidden md:inline bg-primary/40 text-primary-200 px-2.5 py-0.5 rounded text-xs font-medium uppercase tracking-wider">Motto: [INSERT OFFICIAL MOTTO]</span>
@@ -81,11 +80,11 @@
                 <!-- Logo & School Name -->
                 <a href="#hero" class="flex items-center gap-3 group">
                     <div class="w-11 h-11 rounded-xl bg-primary flex items-center justify-center text-white font-bold text-xl shadow-md group-hover:bg-secondary transition">
-                        SN
+                        HI
                     </div>
                     <div>
-                        <span class="block font-extrabold text-lg sm:text-xl text-navy leading-tight tracking-tight">Hansfat International School</span>
-                        <span class="block text-xs text-mutedText font-medium tracking-wide">Nursery to JHS</span>
+                        <span class="block font-extrabold text-lg sm:text-xl text-navy leading-tight tracking-tight">Hansfat Int. School</span>
+                        <span class="block text-xs text-mutedText font-medium tracking-wide">Zenu, Ghana</span>
                     </div>
                 </a>
 
@@ -108,25 +107,25 @@
                     </a>
                 </div>
 
-                <!-- Mobile Menu Toggle -->
-                <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-lg text-navy hover:bg-softBg focus:outline-none" aria-label="Toggle navigation menu">
-                    <i class="fa-solid fa-bars text-xl"></i>
+                <!-- Mobile Menu Toggle Button (Fixed) -->
+                <button id="mobileMenuBtn" type="button" class="lg:hidden p-2.5 rounded-lg text-navy bg-softBg hover:bg-slate-200 focus:outline-none transition z-50" aria-label="Toggle navigation menu">
+                    <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
                 </button>
             </div>
         </div>
 
-        <!-- Mobile Menu Drawer -->
-        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3 shadow-xl">
-            <a href="#hero" class="block px-3 py-2 rounded-lg text-base font-medium text-navy hover:bg-softBg">Home</a>
-            <a href="#about" class="block px-3 py-2 rounded-lg text-base font-medium text-navy hover:bg-softBg">About Us</a>
-            <a href="#academics" class="block px-3 py-2 rounded-lg text-base font-medium text-navy hover:bg-softBg">Academics</a>
-            <a href="#admissions" class="block px-3 py-2 rounded-lg text-base font-medium text-navy hover:bg-softBg">Admissions</a>
-            <a href="#student-life" class="block px-3 py-2 rounded-lg text-base font-medium text-navy hover:bg-softBg">Student Life</a>
-            <a href="#parent-info" class="block px-3 py-2 rounded-lg text-base font-medium text-navy hover:bg-softBg">Parent Information</a>
-            <a href="#news" class="block px-3 py-2 rounded-lg text-base font-medium text-navy hover:bg-softBg">News and Events</a>
-            <a href="#contact" class="block px-3 py-2 rounded-lg text-base font-medium text-navy hover:bg-softBg">Contact</a>
-            <div class="pt-2">
-                <a href="#admissions" class="block w-full text-center bg-primary text-white font-semibold py-3 rounded-xl shadow">
+        <!-- Mobile Menu Drawer (Fixed visibility toggle) -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 pt-4 pb-6 space-y-3 shadow-xl absolute top-20 left-0 w-full z-40 transition-all duration-300">
+            <a href="#hero" class="mobile-link block px-3 py-2 rounded-lg text-base font-medium text-navy hover:bg-softBg">Home</a>
+            <a href="#about" class="mobile-link block px-3 py-2 rounded-lg text-base font-medium text-navy hover:bg-softBg">About Us</a>
+            <a href="#academics" class="mobile-link block px-3 py-2 rounded-lg text-base font-medium text-navy hover:bg-softBg">Academics</a>
+            <a href="#admissions" class="mobile-link block px-3 py-2 rounded-lg text-base font-medium text-navy hover:bg-softBg">Admissions</a>
+            <a href="#student-life" class="mobile-link block px-3 py-2 rounded-lg text-base font-medium text-navy hover:bg-softBg">Student Life</a>
+            <a href="#parent-info" class="mobile-link block px-3 py-2 rounded-lg text-base font-medium text-navy hover:bg-softBg">Parent Information</a>
+            <a href="#news" class="mobile-link block px-3 py-2 rounded-lg text-base font-medium text-navy hover:bg-softBg">News and Events</a>
+            <a href="#contact" class="mobile-link block px-3 py-2 rounded-lg text-base font-medium text-navy hover:bg-softBg">Contact</a>
+            <div class="pt-3">
+                <a href="#admissions" class="mobile-link block w-full text-center bg-primary text-white font-semibold py-3 rounded-xl shadow">
                     Apply for Admission
                 </a>
             </div>
@@ -139,13 +138,13 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 <div class="lg:col-span-7 space-y-6">
                     <div class="inline-flex items-center gap-2 bg-primary/10 text-primary px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold tracking-wide">
-                        <i class="fa-solid fa-graduation-cap"></i> Welcome to Hansfat International School 
+                        <i class="fa-solid fa-graduation-cap"></i> Welcome to Hansfat International School
                     </div>
                     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-navy tracking-tight leading-[1.15]">
                         Building Bright Minds. <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Shaping Tomorrow.</span>
                     </h1>
                     <p class="text-base sm:text-lg text-mutedText max-w-2xl leading-relaxed">
-                        Discover a learning community committed to helping every student grow in knowledge, character, confidence, and purpose in [INSERT TOWN/CITY, GHANA].
+                        Discover a learning community committed to helping every student grow in knowledge, character, confidence, and purpose right here in Zenu, Ghana.
                     </p>
                     <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
                         <a href="#admissions" class="bg-primary hover:bg-secondary text-white font-semibold px-8 py-4 rounded-xl shadow-xl shadow-primary/25 text-center transition flex items-center justify-center gap-2">
@@ -158,7 +157,7 @@
                     </div>
                     <div class="pt-6 border-t border-slate-200/60 grid grid-cols-2 sm:grid-cols-3 gap-6">
                         <div>
-                            <span class="block text-2xl font-bold text-primary">[INSERT LEVELS]</span>
+                            <span class="block text-2xl font-bold text-primary">Quality</span>
                             <span class="text-xs text-mutedText font-medium">Educational Stages</span>
                         </div>
                         <div>
@@ -175,7 +174,6 @@
                     <div class="relative mx-auto max-w-md lg:max-w-none">
                         <div class="absolute -inset-4 bg-gradient-to-tr from-primary/20 to-secondary/20 rounded-3xl transform rotate-2"></div>
                         <div class="relative bg-slate-900 rounded-2xl shadow-2xl overflow-hidden border border-slate-200 aspect-[4/3] flex items-center justify-center">
-                            <!-- Placeholder graphic for school environment -->
                             <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/30 to-transparent z-10 flex flex-col justify-end p-6 text-white">
                                 <span class="text-xs uppercase tracking-wider text-secondary font-semibold">Campus Life</span>
                                 <h3 class="text-lg font-bold">Committed to Academic & Moral Excellence</h3>
@@ -183,7 +181,7 @@
                             </div>
                             <div class="text-slate-600 flex flex-col items-center gap-3">
                                 <i class="fa-solid fa-school text-6xl text-slate-500"></i>
-                                <span class="text-sm font-medium text-slate-400">[Insert Authentic School Photo Here]</span>
+                                <span class="text-sm font-medium text-slate-400">Hansfat Int. School - Zenu</span>
                             </div>
                         </div>
                     </div>
@@ -204,7 +202,7 @@
                         A Foundation Built on Trust, Discipline, and Growth
                     </h2>
                     <p class="text-mutedText leading-relaxed">
-                        At Hansfat International School, we believe that true education goes beyond the classroom. Located in [INSERT TOWN/CITY, GHANA], we provide a disciplined, nurturing, and intellectually stimulating environment designed to unlock the unique potential in every child.
+                        At Hansfat International School, we believe that true education goes beyond the classroom. Located in Zenu, Ghana, we provide a disciplined, nurturing, and intellectually stimulating environment designed to unlock the unique potential in every child.
                     </p>
                     <p class="text-mutedText leading-relaxed">
                         Our dedicated faculty works hand-in-hand with parents to ensure holistic development—balancing academic rigor with moral guidance, creativity, and leadership skills.
@@ -252,7 +250,7 @@
                         <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary text-2xl font-bold mb-6">
                             <i class="fa-solid fa-child-reaching"></i>
                         </div>
-                        <span class="text-xs uppercase tracking-wider text-secondary font-bold">[INSERT LEVEL 1 e.g. Kindergarten]</span>
+                        <span class="text-xs uppercase tracking-wider text-secondary font-bold">Early Years</span>
                         <h3 class="text-xl font-bold text-navy mt-1 mb-3">Early Years Foundation</h3>
                         <p class="text-sm text-mutedText leading-relaxed">Providing a safe, warm, and stimulating environment where toddlers and young children take their first steps into structured learning.</p>
                     </div>
@@ -268,7 +266,7 @@
                         <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary text-2xl font-bold mb-6">
                             <i class="fa-solid fa-book-open"></i>
                         </div>
-                        <span class="text-xs uppercase tracking-wider text-secondary font-bold">[INSERT LEVEL 2 e.g. Primary School]</span>
+                        <span class="text-xs uppercase tracking-wider text-secondary font-bold">Primary School</span>
                         <h3 class="text-xl font-bold text-navy mt-1 mb-3">Primary Education</h3>
                         <p class="text-sm text-mutedText leading-relaxed">Building strong fundamental literacy, numeracy, and critical thinking skills through interactive lessons and engaged teaching.</p>
                     </div>
@@ -284,8 +282,482 @@
                         <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary text-2xl font-bold mb-6">
                             <i class="fa-solid fa-graduation-cap"></i>
                         </div>
-                        <span class="text-xs uppercase tracking-wider text-secondary font-bold">[INSERT LEVEL 3 e.g. Junior High]</span>
+                        <span class="text-xs uppercase tracking-wider text-secondary font-bold">Junior High</span>
                         <h3 class="text-xl font-bold text-navy mt-1 mb-3">Junior High School</h3>
                         <p class="text-sm text-mutedText leading-relaxed">Preparing students for future academic challenges with advanced subject mastery, discipline, and personal responsibility.</p>
                     </div>
-                    <div class="pt-6 mt-6 border-t border-slate-1
+                    <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between text-sm">
+                        <span class="font-medium text-navy">Age Range: [Insert Ages]</span>
+                        <a href="#admissions" class="text-primary font-bold hover:underline flex items-center gap-1">Enquire <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY PARENTS CHOOSE US -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-secondary font-bold text-xs uppercase tracking-widest">Our Verified Strengths</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-navy">Why Parents Choose Hansfat International School</h2>
+                <p class="text-mutedText">We maintain core institutional values that reassure parents and inspire students daily.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-6 rounded-2xl bg-softBg border border-slate-100 space-y-3">
+                    <div class="w-10 h-10 rounded-lg bg-primary text-white flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-navy">Quality Teaching</h3>
+                    <p class="text-sm text-mutedText leading-relaxed">Dedicated instructors committed to personalized attention and academic mentorship.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-softBg border border-slate-100 space-y-3">
+                    <div class="w-10 h-10 rounded-lg bg-primary text-white flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-shield-heart"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-navy">Character Development</h3>
+                    <p class="text-sm text-mutedText leading-relaxed">Strong emphasis on discipline, moral integrity, and respect for community values.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-softBg border border-slate-100 space-y-3">
+                    <div class="w-10 h-10 rounded-lg bg-primary text-white flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-navy">Parent-School Communication</h3>
+                    <p class="text-sm text-mutedText leading-relaxed">Open and transparent channels ensuring parents stay informed on student progress.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CAMPUS AND LEARNING ENVIRONMENT -->
+    <section class="py-20 bg-softBg border-t border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-secondary font-bold text-xs uppercase tracking-widest">Campus Environment</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-navy">A Space Designed for Learning & Growth</h2>
+                <p class="text-mutedText">Take a glimpse into our campus facilities dedicated to supporting students in their academic and extracurricular journeys.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200">
+                    <div class="h-48 bg-slate-800 flex items-center justify-center text-slate-500 text-sm font-medium">
+                        [Illustrative Classroom Image]
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <h3 class="font-bold text-navy text-lg">Modern Classrooms</h3>
+                        <p class="text-xs text-mutedText">Well-ventilated, well-lit spaces optimized for focused learning and interactive participation.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200">
+                    <div class="h-48 bg-slate-800 flex items-center justify-center text-slate-500 text-sm font-medium">
+                        [Illustrative Library Image]
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <h3 class="font-bold text-navy text-lg">School Library</h3>
+                        <p class="text-xs text-mutedText">Stocked with approved textbooks, reading materials, and study resources.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200">
+                    <div class="h-48 bg-slate-800 flex items-center justify-center text-slate-500 text-sm font-medium">
+                        [Illustrative Sports Ground Image]
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <h3 class="font-bold text-navy text-lg">Sports & Recreation</h3>
+                        <p class="text-xs text-mutedText">Safe outdoor areas designed to foster physical fitness, teamwork, and sportsmanship.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STUDENT LIFE SECTION -->
+    <section id="student-life" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-secondary font-bold text-xs uppercase tracking-widest">Beyond the Classroom</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-navy">Developing Well-Rounded Individuals</h2>
+                    <p class="text-mutedText leading-relaxed">
+                        Education at Hansfat International School extends beyond textbooks. We encourage students to discover their passions through active participation in sports, cultural clubs, leadership roles, and creative arts.
+                    </p>
+                    <ul class="space-y-3 text-sm text-navy font-medium">
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-primary"></i> Inter-house sports competitions</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-primary"></i> Cultural dance and drama club</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-primary"></i> Student leadership council</li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-7 bg-softBg rounded-2xl p-8 border border-slate-200">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                            <i class="fa-solid fa-futbol text-primary text-2xl mb-3"></i>
+                            <h4 class="font-bold text-navy">Sports & Games</h4>
+                            <p class="text-xs text-mutedText mt-1">Building physical endurance, teamwork, and fair play.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                            <i class="fa-solid fa-palette text-primary text-2xl mb-3"></i>
+                            <h4 class="font-bold text-navy">Arts & Culture</h4>
+                            <p class="text-xs text-mutedText mt-1">Encouraging creative self-expression and cultural appreciation.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                            <i class="fa-solid fa-users text-primary text-2xl mb-3"></i>
+                            <h4 class="font-bold text-navy">Clubs & Societies</h4>
+                            <p class="text-xs text-mutedText mt-1">Fostering specialized interests and intellectual curiosity.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                            <i class="fa-solid fa-award text-primary text-2xl mb-3"></i>
+                            <h4 class="font-bold text-navy">Leadership Training</h4>
+                            <p class="text-xs text-mutedText mt-1">Empowering students to take initiative and responsibility.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARENT INFORMATION SECTION -->
+    <section id="parent-info" class="py-20 bg-softBg border-t border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-secondary font-bold text-xs uppercase tracking-widest">Resources</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-navy">Parent Information Portal</h2>
+                <p class="text-mutedText">Quick access to essential documents, term schedules, and school guidelines.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex items-center justify-between">
+                    <div>
+                        <h3 class="font-bold text-navy">School Calendar</h3>
+                        <p class="text-xs text-mutedText mt-1">View important dates for the current term.</p>
+                    </div>
+                    <i class="fa-solid fa-calendar-days text-2xl text-primary"></i>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex items-center justify-between">
+                    <div>
+                        <h3 class="font-bold text-navy">Uniform Guidelines</h3>
+                        <p class="text-xs text-mutedText mt-1">Approved attire and appearance standards.</p>
+                    </div>
+                    <i class="fa-solid fa-shirt text-2xl text-primary"></i>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex items-center justify-between">
+                    <div>
+                        <h3 class="font-bold text-navy">School Policies</h3>
+                        <p class="text-xs text-mutedText mt-1">Guidelines on discipline, health, and safety.</p>
+                    </div>
+                    <i class="fa-solid fa-file-shield text-2xl text-primary"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADMISSIONS SECTION & FORM -->
+    <section id="admissions" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <!-- Left: Admissions Info -->
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-secondary font-bold text-xs uppercase tracking-widest">Admissions Open</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-navy">Your Child's Next Chapter Starts Here</h2>
+                    <p class="text-mutedText leading-relaxed">
+                        We welcome prospective parents to enquire about our admissions process. Submit your enquiry using our form, and our admissions team will reach out with the necessary guidance.
+                    </p>
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-xs mt-0.5">1</div>
+                            <div>
+                                <h4 class="font-bold text-navy text-sm">Submit Enquiry</h4>
+                                <p class="text-xs text-mutedText">Fill out the basic admission enquiry form with your contact details and level of interest.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-xs mt-0.5">2</div>
+                            <div>
+                                <h4 class="font-bold text-navy text-sm">School Consultation</h4>
+                                <p class="text-xs text-mutedText">Our team contacts you to discuss programme fit and schedule an optional campus visit.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-xs mt-0.5">3</div>
+                            <div>
+                                <h4 class="font-bold text-navy text-sm">Enrollment</h4>
+                                <p class="text-xs text-mutedText">Complete formal registration paperwork and welcome your child to Hansfat International School.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <a href="https://wa.me/[INSERT VERIFIED NUMBER]?text=Hello,%20I%20would%20like%20to%20make%20an%20admissions%20enquiry%20for%20Hansfat%20International%20School." target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3 rounded-xl shadow transition">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Enquire via WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: Admission Enquiry Form -->
+                <div class="lg:col-span-6 bg-softBg rounded-2xl p-8 border border-slate-200">
+                    <h3 class="text-xl font-bold text-navy mb-2">Admission Enquiry Form</h3>
+                    <p class="text-xs text-mutedText mb-6">Complete this demonstration form to receive a call back from our admissions desk.</p>
+                    
+                    <form id="admissionForm" class="space-y-4">
+                        <div>
+                            <label for="parentName" class="block text-xs font-semibold text-navy mb-1">Parent / Guardian Name *</label>
+                            <input type="text" id="parentName" required class="w-full bg-white border border-slate-300 rounded-lg px-4 py-2.5 text-sm text-navy focus:outline-none focus:border-primary transition" placeholder="e.g. Kwame Mensah">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-xs font-semibold text-navy mb-1">Telephone Number *</label>
+                            <input type="tel" id="phone" required class="w-full bg-white border border-slate-300 rounded-lg px-4 py-2.5 text-sm text-navy focus:outline-none focus:border-primary transition" placeholder="e.g. +233 24 000 0000">
+                        </div>
+                        <div>
+                            <label for="level" class="block text-xs font-semibold text-navy mb-1">Programme / School Level *</label>
+                            <select id="level" required class="w-full bg-white border border-slate-300 rounded-lg px-4 py-2.5 text-sm text-navy focus:outline-none focus:border-primary transition">
+                                <option value="">Select Level</option>
+                                <option value="Kindergarten">Kindergarten / Early Years</option>
+                                <option value="Primary">Primary Education</option>
+                                <option value="Junior High">Junior High School</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-xs font-semibold text-navy mb-1">Additional Message or Questions</label>
+                            <textarea id="message" rows="3" class="w-full bg-white border border-slate-300 rounded-lg px-4 py-2.5 text-sm text-navy focus:outline-none focus:border-primary transition" placeholder="Tell us about your child's grade level..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary hover:bg-secondary text-white font-semibold py-3 rounded-xl shadow transition">
+                            Submit Admission Enquiry
+                        </button>
+                        <p id="formSuccess" class="hidden text-xs text-emerald-600 font-semibold text-center mt-2">Enquiry received successfully! Our admissions office will reach out shortly.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWS AND ANNOUNCEMENTS -->
+    <section id="announcements" class="py-20 bg-softBg border-t border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-secondary font-bold text-xs uppercase tracking-widest">Updates</span>
+                <h2 id="news" class="text-3xl sm:text-4xl font-bold text-navy">News and Announcements</h2>
+                <p class="text-mutedText">Stay informed with the latest updates from around the school community.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="h-40 bg-slate-800 flex items-center justify-center text-slate-500 text-xs">[Sample Announcement Image]</div>
+                        <div class="p-6 space-y-2">
+                            <span class="text-xs font-semibold text-secondary uppercase tracking-wider">Announcement</span>
+                            <h3 class="font-bold text-navy text-lg">Resumption Date for the New Term</h3>
+                            <p class="text-xs text-mutedText">Important information regarding reporting times and requirements for students.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <span class="text-xs text-slate-400 font-medium">Published: [Insert Date]</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="h-40 bg-slate-800 flex items-center justify-center text-slate-500 text-xs">[Sample Event Image]</div>
+                        <div class="p-6 space-y-2">
+                            <span class="text-xs font-semibold text-secondary uppercase tracking-wider">Event</span>
+                            <h3 class="font-bold text-navy text-lg">Parent-Teacher Association Meeting</h3>
+                            <p class="text-xs text-mutedText">All parents and guardians are cordially invited to discuss student progress and upcoming projects.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <span class="text-xs text-slate-400 font-medium">Published: [Insert Date]</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="h-40 bg-slate-800 flex items-center justify-center text-slate-500 text-xs">[Sample Notice Image]</div>
+                        <div class="p-6 space-y-2">
+                            <span class="text-xs font-semibold text-secondary uppercase tracking-wider">Notice</span>
+                            <h3 class="font-bold text-navy text-lg">Inter-House Sports Competition Notice</h3>
+                            <p class="text-xs text-mutedText">Get ready for an exciting day of athletic displays and house spirit.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <span class="text-xs text-slate-400 font-medium">Published: [Insert Date]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-secondary font-bold text-xs uppercase tracking-widest">Get In Touch</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-navy">Contact Hansfat International School</h2>
+                    <p class="text-mutedText">We welcome your questions, feedback, and visit inquiries.</p>
+                    
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <span class="block text-xs font-semibold text-mutedText">Location</span>
+                                <span class="text-sm font-bold text-navy">Zenu, Ghana</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <span class="block text-xs font-semibold text-mutedText">Telephone</span>
+                                <a href="tel:[INSERT VERIFIED NUMBER]" class="text-sm font-bold text-navy hover:text-secondary">[INSERT VERIFIED NUMBER]</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <span class="block text-xs font-semibold text-mutedText">Email</span>
+                                <a href="mailto:[INSERT VERIFIED EMAIL]" class="text-sm font-bold text-navy hover:text-secondary">[INSERT VERIFIED EMAIL]</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-7 bg-softBg rounded-2xl p-8 border border-slate-200">
+                    <h3 class="text-xl font-bold text-navy mb-4">Send Us a Message</h3>
+                    <form id="contactForm" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="contactName" class="block text-xs font-semibold text-navy mb-1">Your Name *</label>
+                                <input type="text" id="contactName" required class="w-full bg-white border border-slate-300 rounded-lg px-4 py-2.5 text-sm text-navy focus:outline-none focus:border-primary transition" placeholder="e.g. Ama Serwaa">
+                            </div>
+                            <div>
+                                <label for="contactEmail" class="block text-xs font-semibold text-navy mb-1">Your Email / Phone *</label>
+                                <input type="text" id="contactEmail" required class="w-full bg-white border border-slate-300 rounded-lg px-4 py-2.5 text-sm text-navy focus:outline-none focus:border-primary transition" placeholder="e.g. ama@example.com">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="contactMsg" class="block text-xs font-semibold text-navy mb-1">Message *</label>
+                            <textarea id="contactMsg" rows="4" required class="w-full bg-white border border-slate-300 rounded-lg px-4 py-2.5 text-sm text-navy focus:outline-none focus:border-primary transition" placeholder="How can we assist you?"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary hover:bg-secondary text-white font-semibold py-3 rounded-xl shadow transition">
+                            Send Message
+                        </button>
+                        <p id="contactSuccess" class="hidden text-xs text-emerald-600 font-semibold text-center mt-2">Message sent successfully!</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-navy text-slate-300 py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+                <div class="space-y-4">
+                    <span class="block text-xl font-extrabold text-white tracking-tight">Hansfat Int. School</span>
+                    <p class="text-xs text-slate-400 leading-relaxed">Motto: [INSERT OFFICIAL MOTTO]</p>
+                    <p class="text-xs text-slate-400 leading-relaxed">Located in Zenu, Ghana. Providing exceptional education and shaping tomorrow's leaders.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#about" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="#academics" class="hover:text-white transition">Academics</a></li>
+                        <li><a href="#admissions" class="hover:text-white transition">Admissions</a></li>
+                        <li><a href="#student-life" class="hover:text-white transition">Student Life</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4">Parent Portal</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#parent-info" class="hover:text-white transition">School Calendar</a></li>
+                        <li><a href="#parent-info" class="hover:text-white transition">Uniform Guidelines</a></li>
+                        <li><a href="#parent-info" class="hover:text-white transition">School Policies</a></li>
+                        <li><a href="#news" class="hover:text-white transition">Announcements</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li><i class="fa-solid fa-location-dot text-secondary mr-2"></i> Zenu, Ghana</li>
+                        <li><i class="fa-solid fa-phone text-secondary mr-2"></i> [INSERT VERIFIED NUMBER]</li>
+                        <li><i class="fa-solid fa-envelope text-secondary mr-2"></i> [INSERT VERIFIED EMAIL]</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+                <p>&copy; 2026 Hansfat International School. All rights reserved. Demonstration Project.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FOR INTERACTIVITY -->
+    <script>
+        // Mobile Menu Toggle Fix
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        // Close mobile menu when clicking any mobile link
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            }
+        });
+
+        // Admission Form Handler (Demo simulation)
+        const admissionForm = document.getElementById('admissionForm');
+        const formSuccess = document.getElementById('formSuccess');
+
+        admissionForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            formSuccess.classList.remove('hidden');
+            admissionForm.reset();
+            setTimeout(() => {
+                formSuccess.classList.add('hidden');
+            }, 6000);
+        });
+
+        // Contact Form Handler (Demo simulation)
+        const contactForm = document.getElementById('contactForm');
+        const contactSuccess = document.getElementById('contactSuccess');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            contactSuccess.classList.remove('hidden');
+            contactForm.reset();
+            setTimeout(() => {
+                contactSuccess.classList.add('hidden');
+            }, 6000);
+        });
+    </script>
+</body>
+</html>
