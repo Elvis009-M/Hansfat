@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hansfat International School— Excellence in Education</title>
+    <meta name="description" content="Welcome to Hansfat international School located in [INSERT TOWN/CITY, GHANA]. Discover our academic programmes, admissions process, and vibrant student life.">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#30206D',
+                        secondary: '#2456C5',
+                        navy: '#17233F',
+                        softBg: '#F7F8FC',
+                        mutedText: '#667085',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Custom scrollbar and minor enhancements */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F7F8FC;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #30206D;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-white text-navy font-sans antialiased selection:bg-secondary selection:text-white">
+
+    <!-- DEMO BANNER -->
+    <div class="bg-amber-500 text-slate-950 px-4 py-2 text-center text-xs sm:text-sm font-semibold tracking-wide flex items-center justify-center gap-2">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        <span>DEMONSTRATION PROJECT: This template is presented to showcase professional web design for [INSERT SCHOOL NAME].</span>
+    </div>
+
+    <!-- TOP INFORMATION BAR -->
+    <div class="bg-navy text-slate-300 text-xs sm:text-sm py-2 px-4 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-6 flex-wrap justify-center sm:justify-start">
+                <span class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-secondary"></i> [INSERT TOWN/CITY, GHANA]</span>
+                <a href="tel:[INSERT VERIFIED NUMBER]" class="flex items-center gap-2 hover:text-white transition"><i class="fa-solid fa-phone text-secondary"></i> [INSERT VERIFIED NUMBER]</a>
+                <a href="mailto:[INSERT VERIFIED EMAIL]" class="flex items-center gap-2 hover:text-white transition"><i class="fa-solid fa-envelope text-secondary"></i> [INSERT VERIFIED EMAIL]</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="hidden md:inline bg-primary/40 text-primary-200 px-2.5 py-0.5 rounded text-xs font-medium uppercase tracking-wider">Motto: [INSERT OFFICIAL MOTTO]</span>
+                <a href="#announcements" class="text-white hover:underline flex items-center gap-1 font-medium">
+                    <i class="fa-solid fa-bullhorn text-secondary"></i> Announcements
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- STICKY NAVIGATION -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo & School Name -->
+                <a href="#hero" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-xl bg-primary flex items-center justify-center text-white font-bold text-xl shadow-md group-hover:bg-secondary transition">
+                        SN
+                    </div>
+                    <div>
+                        <span class="block font-extrabold text-lg sm:text-xl text-navy leading-tight tracking-tight">[INSERT SCHOOL NAME]</span>
+                        <span class="block text-xs text-mutedText font-medium tracking-wide">[INSERT SCHOOL LEVELS]</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8">
+                    <a href="#hero" class="text-sm font-semibold text-primary transition hover:text-secondary">Home</a>
+                    <a href="#about" class="text-sm font-semibold text-navy/80 transition hover:text-primary">About Us</a>
+                    <a href="#academics" class="text-sm font-semibold text-navy/80 transition hover:text-primary">Academics</a>
+                    <a href="#admissions" class="text-sm font-semibold text-navy/80 transition hover:text-primary">Admissions</a>
+                    <a href="#student-life" class="text-sm font-semibold text-navy/80 transition hover:text-primary">Student Life</a>
+                    <a href="#parent-info" class="text-sm font-semibold text-navy/80 transition hover:text-primary">Parents</a>
+                    <a href="#news" class="text-sm font-semibold text-navy/80 transition hover:text-primary">News</a>
+                    <a href="#contact" class="text-sm font-semibold text-navy/80 transition hover:text-primary">Contact</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <div class="hidden lg:flex items-center gap-4">
+                    <a href="#admissions" class="bg-primary hover:bg-secondary text-white font-semibold text-sm px-5 py-2.5 rounded-xl shadow-lg shadow-primary/20 transition transform hover:-translate-y-0.5">
+                        Apply for Admission
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-lg text-navy hover:bg-softBg focus:outline-none" aria-label="Toggle navigation menu">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3 shadow-xl">
+            <a href="#hero" class="block px-3 py-2 rounded-lg text-base font-medium text-navy hover:bg-softBg">Home</a>
+            <a href="#about" class="block px-3 py-2 rounded-lg text-base font-medium text-navy hover:bg-softBg">About Us</a>
+            <a href="#academics" class="block px-3 py-2 rounded-lg text-base font-medium text-navy hover:bg-softBg">Academics</a>
+            <a href="#admissions" class="block px-3 py-2 rounded-lg text-base font-medium text-navy hover:bg-softBg">Admissions</a>
+            <a href="#student-life" class="block px-3 py-2 rounded-lg text-base font-medium text-navy hover:bg-softBg">Student Life</a>
+            <a href="#parent-info" class="block px-3 py-2 rounded-lg text-base font-medium text-navy hover:bg-softBg">Parent Information</a>
+            <a href="#news" class="block px-3 py-2 rounded-lg text-base font-medium text-navy hover:bg-softBg">News and Events</a>
+            <a href="#contact" class="block px-3 py-2 rounded-lg text-base font-medium text-navy hover:bg-softBg">Contact</a>
+            <div class="pt-2">
+                <a href="#admissions" class="block w-full text-center bg-primary text-white font-semibold py-3 rounded-xl shadow">
+                    Apply for Admission
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="relative bg-gradient-to-br from-softBg via-white to-slate-100 py-16 lg:py-24 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-primary/10 text-primary px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold tracking-wide">
+                        <i class="fa-solid fa-graduation-cap"></i> Welcome to Hansfat International School 
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-navy tracking-tight leading-[1.15]">
+                        Building Bright Minds. <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Shaping Tomorrow.</span>
+                    </h1>
+                    <p class="text-base sm:text-lg text-mutedText max-w-2xl leading-relaxed">
+                        Discover a learning community committed to helping every student grow in knowledge, character, confidence, and purpose in [INSERT TOWN/CITY, GHANA].
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+                        <a href="#admissions" class="bg-primary hover:bg-secondary text-white font-semibold px-8 py-4 rounded-xl shadow-xl shadow-primary/25 text-center transition flex items-center justify-center gap-2">
+                            <span>Explore Admissions</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                        <a href="#about" class="bg-white hover:bg-softBg text-navy border border-slate-200 font-semibold px-8 py-4 rounded-xl text-center transition shadow-sm">
+                            Discover Our School
+                        </a>
+                    </div>
+                    <div class="pt-6 border-t border-slate-200/60 grid grid-cols-2 sm:grid-cols-3 gap-6">
+                        <div>
+                            <span class="block text-2xl font-bold text-primary">[INSERT LEVELS]</span>
+                            <span class="text-xs text-mutedText font-medium">Educational Stages</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl font-bold text-primary">Ghana</span>
+                            <span class="text-xs text-mutedText font-medium">Curriculum Standards</span>
+                        </div>
+                        <div class="col-span-2 sm:col-span-1">
+                            <span class="block text-2xl font-bold text-primary">Safe</span>
+                            <span class="text-xs text-mutedText font-medium">Caring Environment</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="absolute -inset-4 bg-gradient-to-tr from-primary/20 to-secondary/20 rounded-3xl transform rotate-2"></div>
+                        <div class="relative bg-slate-900 rounded-2xl shadow-2xl overflow-hidden border border-slate-200 aspect-[4/3] flex items-center justify-center">
+                            <!-- Placeholder graphic for school environment -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/30 to-transparent z-10 flex flex-col justify-end p-6 text-white">
+                                <span class="text-xs uppercase tracking-wider text-secondary font-semibold">Campus Life</span>
+                                <h3 class="text-lg font-bold">Committed to Academic & Moral Excellence</h3>
+                                <p class="text-xs text-slate-300 mt-1">Illustrative learning environment photo placeholder.</p>
+                            </div>
+                            <div class="text-slate-600 flex flex-col items-center gap-3">
+                                <i class="fa-solid fa-school text-6xl text-slate-500"></i>
+                                <span class="text-sm font-medium text-slate-400">[Insert Authentic School Photo Here]</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCHOOL INTRODUCTION -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 text-secondary font-bold text-xs uppercase tracking-widest">
+                        <span>About Our Institution</span>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-navy tracking-tight">
+                        A Foundation Built on Trust, Discipline, and Growth
+                    </h2>
+                    <p class="text-mutedText leading-relaxed">
+                        At Hansfat International School, we believe that true education goes beyond the classroom. Located in [INSERT TOWN/CITY, GHANA], we provide a disciplined, nurturing, and intellectually stimulating environment designed to unlock the unique potential in every child.
+                    </p>
+                    <p class="text-mutedText leading-relaxed">
+                        Our dedicated faculty works hand-in-hand with parents to ensure holistic development—balancing academic rigor with moral guidance, creativity, and leadership skills.
+                    </p>
+                    <div class="pt-4">
+                        <a href="#contact" class="inline-flex items-center gap-2 text-primary font-bold hover:text-secondary transition">
+                            <span>Learn More About Our Philosophy</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="bg-softBg p-8 rounded-2xl border border-slate-100 shadow-sm space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-navy">Our Mission</h3>
+                        <p class="text-sm text-mutedText leading-relaxed">[INSERT SCHOOL MISSION STATEMENT OR EDITABLE PLACEHOLDER TEXT]</p>
+                    </div>
+                    <div class="bg-softBg p-8 rounded-2xl border border-slate-100 shadow-sm space-y-4 sm:mt-6">
+                        <div class="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-navy">Our Vision</h3>
+                        <p class="text-sm text-mutedText leading-relaxed">[INSERT SCHOOL VISION STATEMENT OR EDITABLE PLACEHOLDER TEXT]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACADEMICS SECTION -->
+    <section id="academics" class="py-20 bg-softBg border-y border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-secondary font-bold text-xs uppercase tracking-widest">Academic Programmes</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-navy">Structured Learning for Every Stage</h2>
+                <p class="text-mutedText">Explore our educational levels configured to match developmental milestones and curriculum requirements.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Programme Card 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary text-2xl font-bold mb-6">
+                            <i class="fa-solid fa-child-reaching"></i>
+                        </div>
+                        <span class="text-xs uppercase tracking-wider text-secondary font-bold">[INSERT LEVEL 1 e.g. Kindergarten]</span>
+                        <h3 class="text-xl font-bold text-navy mt-1 mb-3">Early Years Foundation</h3>
+                        <p class="text-sm text-mutedText leading-relaxed">Providing a safe, warm, and stimulating environment where toddlers and young children take their first steps into structured learning.</p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between text-sm">
+                        <span class="font-medium text-navy">Age Range: [Insert Ages]</span>
+                        <a href="#admissions" class="text-primary font-bold hover:underline flex items-center gap-1">Enquire <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Programme Card 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary text-2xl font-bold mb-6">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                        <span class="text-xs uppercase tracking-wider text-secondary font-bold">[INSERT LEVEL 2 e.g. Primary School]</span>
+                        <h3 class="text-xl font-bold text-navy mt-1 mb-3">Primary Education</h3>
+                        <p class="text-sm text-mutedText leading-relaxed">Building strong fundamental literacy, numeracy, and critical thinking skills through interactive lessons and engaged teaching.</p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between text-sm">
+                        <span class="font-medium text-navy">Age Range: [Insert Ages]</span>
+                        <a href="#admissions" class="text-primary font-bold hover:underline flex items-center gap-1">Enquire <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Programme Card 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary text-2xl font-bold mb-6">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <span class="text-xs uppercase tracking-wider text-secondary font-bold">[INSERT LEVEL 3 e.g. Junior High]</span>
+                        <h3 class="text-xl font-bold text-navy mt-1 mb-3">Junior High School</h3>
+                        <p class="text-sm text-mutedText leading-relaxed">Preparing students for future academic challenges with advanced subject mastery, discipline, and personal responsibility.</p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-1
